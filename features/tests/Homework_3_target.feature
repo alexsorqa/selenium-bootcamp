@@ -1,4 +1,4 @@
-Feature: Homework 3 target.com
+Feature: Homework 3 target.com and Homework 6 scenario steps were edited
 
   Scenario: User verifying cart is empty
     Given Open Target page
