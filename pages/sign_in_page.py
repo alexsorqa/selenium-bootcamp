@@ -7,6 +7,7 @@ class SignInPage(BasePage):
     USERNAME = (By.ID, "username")
     PASSWORD = (By.ID, "password")
     LOGIN_BUTTON = (By.ID, "login")
+    TERMS_AND_CONDITIONS = (By.XPATH, "//a[contains(@href, 'terms-conditions') and @target]")
 
     def verify_sign_in_page(self):
         self.verify_partial_url('create_session_signin')
@@ -19,3 +20,6 @@ class SignInPage(BasePage):
 
     def click_login_button_sign_in_page(self):
         self.click(*self.LOGIN_BUTTON)
+
+    def click_terms_and_conditions(self):
+        self.click(*self.TERMS_AND_CONDITIONS)
