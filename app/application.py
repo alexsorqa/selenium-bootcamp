@@ -7,6 +7,7 @@ from pages.sign_in_menu import SignInMenu
 from pages.sign_in_page import SignInPage
 from pages.add_product_menu import AddProductMenu
 from pages.terms_and_conditions_page import TermsAndConditions
+from pages.returns_page import ReturnsPage
 
 
 class Application:
@@ -23,3 +24,4 @@ class Application:
         self.sign_in_page = SignInPage(driver)
         self.add_product_menu = AddProductMenu(driver)
         self.terms_and_conditions_page = TermsAndConditions(driver)
+        self.returns_page = ReturnsPage(driver)

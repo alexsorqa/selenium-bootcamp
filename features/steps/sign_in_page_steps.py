@@ -39,3 +39,8 @@ def switch_window(context):
 @then('Switch back to original window')
 def switch_to_original_window(context):
     context.app.terms_and_conditions_page.switch_to_window_by_id(context.original_window)
+
+
+@then('The error message displays')
+def credentials_incorrect(context):
+    context.app.sign_in_page.incorrect_credentials()
